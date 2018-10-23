@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(photo.jpg);
+	background-repeat: no-repeat;
+	font-family: 'Rubik', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 10px;
+	height: 100vh;
+}
+.wrap {
+	width: 100%;
+  height: 100vh;
+	background-color: rgba(0,0,0, 0.6);
+}
+.wrappper {
+  width: 100%;
+  margin: 0 auto;
+}
+.wrappper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+canvas {
+  color: #fff;
+  border: #fff dashed 2px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+h1 {
+  padding: 10px 0;
+  font-size: 3.6em;
+  text-transform: uppercase;
+}
+p {
+	margin: 5px 0;
+  font-size: 2em;
+}
+#alphabet {
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
+}
+#alphabet:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#alphabet li {
+  float: left;
+  margin: 5px;  
+  width: 35px;
+  height: 35px;  
+  line-height: 35px;
+  font-size: 1.6px;
+  border: solid 1px #62B169;
+  border-radius: 50%;
+  background: #BFFFC5;
+  color: #62B169;
+  list-style: none;
+  cursor: pointer;  
+}
+#alphabet li:hover {
+	border: solid 1px  #BFFFC5;
+  background: #62B169;  
+  color: #BFFFC5;
+}
+#my-word {
+  display: block;
+}
+#my-word li {
+  position: relative;
+  display: inline-block;
+  margin: 15px 0;  
+  padding: 0 10px;
+  font-size: 1.6em;
+  list-style: none;
+  text-transform: uppercase;
+}
+.active {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  cursor: default;
+}
+.active:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+#lives {
+	margin: 10px 0;
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+}
+button {
+  margin: 10px;
+  padding: 15px 30px;
+  border: solid 1px #fff;
+  border-radius: 5px;
+  background: #62b169;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.8em;  
+  outline: none;
+}
+button:hover {
+  transition: all 0.3s ease-in-out;
+  background: #70CC79;
+  border: solid 1px #fff;
+}
