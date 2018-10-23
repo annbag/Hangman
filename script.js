@@ -23,7 +23,7 @@ window.onload = function() {
       list = document.createElement('li');
       list.id = 'letter';
       list.innerHTML = alphabet[i];
-      // check();
+      check();
       myButtons.appendChild(letters);
       letters.appendChild(list);
     }
@@ -39,6 +39,31 @@ window.onload = function() {
   //hangman
 
   //onclick function
+  check = function() {
+    list.onclick = function() {
+      let guess = this.innerHTML;
+      this.setAttribute("class", "active");
+      this.onclick = null;
+      for (let i = 0; i < word.length; i++) {
+        if (word[i] === guess) {
+          guesses[i].innerHTML = guess;
+          counter += 1;
+          console.log(1);
+        }
+      }
+      let j = (word.indexOf(guess));
+      if (j === -1) {
+        lives -= 1;
+        comments();
+        animate();
+      } else {
+        comments();
+      }
+    };
+  };
+
+
+
   //play
   //reset
 }
