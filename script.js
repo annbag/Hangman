@@ -14,7 +14,20 @@ window.onload = function() {
   let showCategory = document.getElementById('category');
 
   //create alphabet
+  let buttons = function () {
+    myButtons  = document.getElementById('buttons');
+    letters = document.createElement('ul');
 
+    for (let i = 0; i < alphabet.length; i++) {
+      letters.id = 'alphabet';
+      list = document.createElement('li');
+      list.id = 'letter';
+      list.innerHTML = alphabet[i];
+      // check();
+      myButtons.appendChild(letters);
+      letters.appendChild(list);
+    }
+  }
   //select category
   
   //create guesses
