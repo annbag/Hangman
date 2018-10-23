@@ -9,7 +9,7 @@ body {
 	font-family: 'Rubik', sans-serif;
 	color: #fff;
 	text-align: center;
-	font-size: 10px;
+	font-size: 20px;
 	height: 100vh;
 }
 .wrap {
@@ -34,12 +34,11 @@ canvas {
 }
 h1 {
   padding: 10px 0;
-  font-size: 3.6em;
+  font-size: 2em;
   text-transform: uppercase;
 }
 p {
-	margin: 5px 0;
-  font-size: 2em;
+	margin: 10px 0;
 }
 #alphabet {
   margin: 15px auto;
@@ -54,10 +53,10 @@ p {
 #alphabet li {
   float: left;
   margin: 5px;  
-  width: 35px;
-  height: 35px;  
-  line-height: 35px;
-  font-size: 1.6px;
+  width: 40px;
+  height: 40px;  
+  line-height: 40px;
+  font-size: 1.5rem;
   border: solid 1px #62B169;
   border-radius: 50%;
   background: #BFFFC5;
@@ -76,11 +75,9 @@ p {
 #my-word li {
   position: relative;
   display: inline-block;
-  margin: 15px 0;  
+  margin: 20px 0;  
   padding: 0 10px;
-  font-size: 1.6em;
   list-style: none;
-  text-transform: uppercase;
 }
 .active {
   transition: all 0.3s ease-in-out;
@@ -94,13 +91,12 @@ p {
   filter: alpha(opacity=40);
 }
 #lives {
-	margin: 10px 0;
-  font-size: 1.6em;
+	margin: 20px 0;
   text-align: center;
   display: block;
 }
 button {
-  margin: 10px;
+  margin: 40px 10px 0;
   padding: 15px 30px;
   border: solid 1px #fff;
   border-radius: 5px;
@@ -108,7 +104,7 @@ button {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
-  font-size: 1.8em;  
+  font-size: 1em;  
   outline: none;
 }
 button:hover {
